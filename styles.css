@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+header {
+    background: url("images/mobile/image-header.jpg") center bottom;
+    background-size: cover;
+    padding: 1.78em 1.33em;
+    position: relative;
+}
+
+.nav-toggle {
+    float: right;
+}
+
+nav {
+    position: absolute;
+    width: 88%;
+    left: 6%;
+    top: 5.8em;
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    background: white;
+    font-size: 2rem;
+    padding: 2em;
+    text-align: center;
+}
+
+nav ul::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: 0;
+    border-right: 12px solid white;
+    border-bottom: 12px solid white;
+    border-top: 12px solid transparent;
+    border-left: 12px solid transparent;
+}
+
+nav li {
+    margin-bottom: 1.6em;
+}
+
+nav li:last-of-type {
+    margin: 0;
+}
+
+nav a {
+    color: #808397;
+    letter-spacing: -0.14px;
+    text-decoration: none;
+}
+
+.contact-button {
+    font-family: "Fraunces", serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #24303e;
+    background: #fbd600;
+    display: inline-block;
+    padding: 1.1em 2.1em;
+    border-radius: 1.67em;
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 0.625rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin: 2.2em 0 7.4em;
+}
