@@ -37,6 +37,7 @@ nav {
 
 nav.open {
     display: block;
+    z-index: 1;
 }
 
 nav ul {
@@ -60,6 +61,7 @@ nav ul::before {
 
 nav li {
     margin-bottom: 1.6em;
+    line-height: 1.25;
 }
 
 nav li:last-of-type {
@@ -76,6 +78,7 @@ nav a {
     font-family: "Fraunces", serif;
     font-size: 1.5rem;
     font-weight: 900;
+    line-height: 1.67;
     text-transform: uppercase;
     color: #24303e;
     background: #fbd600;
@@ -92,5 +95,39 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     color: white;
-    margin: 2.2em 0 7.4em;
+    margin: 2.2em 0 6.6em;
+}
+
+.arrow {
+    position: absolute;
+    height: 113px;
+    width: 0;
+    border-left: 6px solid white;
+    border-radius: 6px;
+    bottom: 7.5em;
+    left: 50%;
+}
+
+.arrow::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 25px;
+    border-left: 6px solid white;
+    border-radius: 6px;
+    transform: rotate(-45deg);
+    bottom: -4px;
+    left: -13px;
+}
+
+.arrow::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 25px;
+    border-left: 6px solid white;
+    border-radius: 6px;
+    transform: rotate(45deg);
+    bottom: -4px;
+    left: 1px;
 }
