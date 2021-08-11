@@ -14,6 +14,7 @@ body {
     font-family: "Barlow", sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
+    text-align: center;
     color: #24303e;
 }
 
@@ -72,7 +73,6 @@ nav ul {
     font-size: 2rem;
     line-height: 1.25;
     padding: 2em;
-    text-align: center;
 }
 
 nav ul::before {
@@ -111,7 +111,6 @@ h1 {
     font-size: 4rem;
     font-weight: 900;
     letter-spacing: 0.625rem;
-    text-align: center;
     text-transform: uppercase;
     color: white;
     margin: 2.2em 0 6.6em;
@@ -153,7 +152,6 @@ h1 {
 
 main {
     display: grid;
-    text-align: center;
 }
 
 main img {
@@ -226,7 +224,6 @@ main a::before {
 
 .testimonials {
     padding: 4em 1.5em 5.375em;
-    text-align: center;
 }
 
 .testimonials ul {
@@ -260,4 +257,40 @@ main a::before {
     font-size: 1.4rem;
     color: #a7aaad;
     margin-top: 0.65em;
+}
+
+.footer-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-images img {
+    width: 100%;
+}
+
+footer {
+    background: #90D4C6;
+    color: #458d7e;
+    padding: 4em 2.5em 5em;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5em;
+}
+
+footer li {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+footer a:visited {
+    color: #458d7e;
+}
+
+.social-media {
+    margin: 5.5em 4em 0;
+    display: flex;
+    gap: 1.75em;
 }
