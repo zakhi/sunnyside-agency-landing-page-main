@@ -38,6 +38,7 @@ h4 {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 ul {
@@ -49,6 +50,10 @@ header {
     background-size: cover;
     padding: 2em 1.5em;
     position: relative;
+}
+
+.logo {
+    float: left;
 }
 
 .nav-toggle {
@@ -113,7 +118,7 @@ h1 {
     letter-spacing: 0.625rem;
     text-transform: uppercase;
     color: white;
-    margin: 2.2em 0 6.6em;
+    margin: 2.8em 0 6.6em;
 }
 
 .arrow {
@@ -283,10 +288,6 @@ footer ul {
 footer li {
     font-size: 1.8rem;
     line-height: 2.5rem;
-}
-
-footer a:visited {
-    color: #458d7e;
 }
 
 .social-media {
