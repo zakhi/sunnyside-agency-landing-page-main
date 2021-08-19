@@ -21,6 +21,7 @@ body {
     letter-spacing: -0.008em;
     text-align: center;
     color: var(--color-primary);
+    background: #fffcf8;
 }
 
 h1, h2, h3, h4, .accent {
