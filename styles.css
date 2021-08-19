@@ -423,21 +423,19 @@ main a:focus::before {
     max-width: 30em;
 }
 
-.testimonials ul {
+.testimonials-grid {
     margin-top: 4em;
-    display: flex;
-    flex-direction: column;
-    gap: 4em;
-}
-
-.testimonials li {
-    width: 100%;
+    display: grid;
+    justify-items: center;
 }
 
 .testimonials img {
     width: 4.625em;
-    margin-inline: auto;
     border-radius: 50%;
+}
+
+.testimonials * + img {
+    margin-top: 4em;
 }
 
 .testimonials .text {
@@ -461,18 +459,20 @@ main a:focus::before {
 
 @media (min-width: 60em) {
     .testimonials {
-        margin-block: 10em;
-        padding: 0 3em;
+        padding: 10em 3em;
         max-width: 75.375em;
     }
 
-    .testimonials ul {
-        flex-direction: row;
-        gap: 1.785em;
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, min-content);
+        grid-auto-flow: column;
+        column-gap: 1.785em;
         margin-top: 5em;
     }
 
     .testimonials img {
+        margin-top: 0;
         width: 4.5em;
     }
 
